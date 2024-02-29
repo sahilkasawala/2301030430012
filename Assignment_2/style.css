@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(imgs/VR\ man.jpg);
+    background-size: cover;
+    min-height: 100%;
+    min-width: none;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 4rem;
+    margin-right: 85%;
+    transition: 2ms ease-in;
+}
+
+ul .H-links {
+    display: inline-block;
+    padding: 95px 80px 10px 0px;
+}
+
+.H-links a {
+    color: #e0d1d1;
+    text-decoration: none;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 2px 15px;
+    background-color: #191934;
+    border-radius: 10px;
+}
+
+.H-links a:hover {
+    color: #fff;
+    transition: 1s;
+    background-color: rgba(105, 192, 226, 0.637);
+    border-radius: 10px;
+}
+
+.login-details {
+    display: inline;
+    padding-right: 7rem;
+}
+
+.login-details a {
+    display: inline;
+    padding: 0px 1.2rem;
+}
+
+.login-details a i {
+    color: rgb(80, 124, 237);
+    cursor: pointer;
+}
+
+.login-details a i:hover {
+    color: #06d1e8;
+    transition: ease-in;
+    transition: 5ms;
+}
+
+/* New Section  */
+
+.left-side {
+    display: flexbox;
+    justify-content: flex-start;
+    margin: 65px 0px 20px 100px;
+}
+
+h2 {
+    color: rgba(20, 85, 238, 0.772);
+    font-family: 'Poiret One', cursive;
+    font-size: 80px;
+    letter-spacing: 9.3px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+p {
+    color: #fff;
+    letter-spacing: 3.5px;
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+button {
+    border: none;
+    padding: 1em;
+    margin: 45px 0px 0px 100px;
+    outline: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: 1.2em;
+    letter-spacing: 0.2em;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    background: none;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, .45);
+
+    &:before,
+    &:after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 10em;
+        transform: translateX(-50%) translateY(-50%);
+        width: 105%;
+        height: 105%;
+        content: '';
+        z-index: -2;
+        background-size: 400% 400%;
+        background: linear-gradient(to right, #e89fd3 0%, #2a65cb 51%, #270fd8 100%);
+    }
+
+    &:before {
+        filter: blur(7px);
+        transition: all .25s ease;
+        animation: pulse 10s infinite ease;
+    }
+
+    &:after {
+        filter: blur(0.3px);
+    }
+
+    &:hover {
+        &:before {
+            width: 115%;
+            height: 115%;
+        }
+    }
+}
+
+.links {
+    display: inline;
+    align-items: baseline;
+}
+
+.icon-list {
+    margin: 50px 0px 10px 0px;
+}
+
+.icon-list .web-add a {
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.web-add .website-name {
+    color: rgb(145, 11, 116);
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: 1.5px;
+
+}
+
+.web-add a {
+    color: #fff;
+    text-decoration: none;
+    /* font-family:'Poiret One', cursive ; */
+    font-weight: 350;
+    margin-left: 7rem;
+}
+
+.links-second {
+    margin-left: 68%;
+}
+
+.icon-list li {
+    display: inline;
+    padding: 0;
+    display: inline-flex;
+    margin: 0px 10px;
+}
+
+.icon-list li a i {
+    color: #fff;
+    transition: 100ms ease-in;
+}
+
+.icon-list li a i:hover {
+    color: #06d1e8;
+}
+
+/*  ******Right-side************ */
+.right-side{
+    display: flexbox;
+    justify-content: flex-end;
+}
+.blob{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    /* background: #fff; */
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -22rem ;
+    margin-left: 40rem;
+}
+
